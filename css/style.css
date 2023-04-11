@@ -52,10 +52,10 @@ body a {
 .absolute-cover .content-cover .text-cover {
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .absolute-cover .content-cover .text-cover .title-cover {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     color: var(--color-white);
 }
@@ -63,7 +63,7 @@ body a {
     margin-bottom: 50px;
 }
 .absolute-cover .content-cover .img-cover img {
-    width: 300px;
+    width: 250px;
 } 
 .absolute-cover .content-cover .selector {
     width: 100%;
