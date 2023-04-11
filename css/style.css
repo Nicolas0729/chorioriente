@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root { 
+    --color-principal: #f1142b;
+    --color-secundario: #fcc549;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+body a {
+    text-decoration: none;
+}
+
+/* ---------------COVER--------------- */
+.cover {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.cover .back-cover {
+    background-image: url(../img/back-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.cover .absolute-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000085;
+}
+.absolute-cover .content-cover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.absolute-cover .content-cover .text-cover {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.absolute-cover .content-cover .text-cover .title-cover {
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+.absolute-cover .content-cover .img-cover {
+    margin-bottom: 50px;
+}
+.absolute-cover .content-cover .img-cover img {
+    width: 300px;
+} 
+.absolute-cover .content-cover .selector {
+    width: 100%;
+}
+
+.absolute-cover .content-cover .selector a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+}
+.absolute-cover .content-cover .selector a .title-menu {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--color-secundario);
+}
+.absolute-cover .content-cover .selector a i {
+    font-size: 50px;
+    color: var(--color-secundario);
+}
+
+
+/* -----------------PRODUCTO------------------- */
+.producto {
+    width: 100%;
+}
+.producto .content-producto {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    padding: 40px 0px;
+}
+.content-producto .head-producto {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.content-producto .head-producto .title-prod {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-black);
+}
+.content-producto .head-producto .separator {
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-principal);
+    display: flex;
+    margin: auto;
+}
+.content-producto .row-producto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+    .row-producto .card-producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px dashed var(--color-secundario);
+        text-align: center;
+        background-color: var(--color-white);
+    }
+    .row-producto .card-producto img {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .row-producto .card-producto .name-prod {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--color-black);
+        margin-bottom: 10px;
+    }
+    .row-producto .card-producto .price {
+        font-size: 15px;
+        padding: 5px 15px;
+        background-color: var(--color-secundario);
+        color: var(--color-black);
+        border-radius: 10px ;
+    }
+
+
+/* ---------------FOOTER----------------- */
+.footer {
+    width: 100%;
+    background-color: var(--color-principal);
+    border-top: 3px solid var(--color-secundario);
+}
+.footer .content-footer {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.content-footer .text-footer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 5px 20px;
+}
+.content-footer .text-footer .contact {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+.content-footer .text-footer .contact i {
+    margin-right: 5px;
+}
