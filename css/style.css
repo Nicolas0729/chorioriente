@@ -31,6 +31,8 @@ body a {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -132,7 +134,7 @@ body a {
         background-color: var(--color-white);
     }
     .row-producto .card-producto img {
-        width: 80%;
+        width: 100%;
         margin: auto;
         margin-bottom: 20px;
     }
