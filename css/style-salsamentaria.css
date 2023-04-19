@@ -76,6 +76,7 @@ body a {
 }
 .absolute-cover .content-cover .img-cover img {
     width: 250px;
+    border-radius: 50%;
 } 
 .absolute-cover .content-cover .selector {
     width: 100%;
